@@ -1,0 +1,46 @@
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+:root {
+    --primary: rgb(168, 153, 12);
+    --secondary: #191919;
+}
+
+/* Reescribir colores */
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary)!important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary)!important;
+}
+
+.contador {
+    position: fixed;
+    width: 100%;
+}
+
+.promo {
+    background-color: var(--primary);
+    width: 40%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.producto {
+    margin-left: 7rem;
+}
+
+.oxxo {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+

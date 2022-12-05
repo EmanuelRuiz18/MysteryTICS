@@ -1,0 +1,243 @@
+$paddingContenido: 0 20px 0 20px;
+$marginContenido: 40px 0 40px 0;
+$marginContacto: 20px 0 20px 0;
+$textoBlanco: #f0f0f0;
+$fondoBlanco: #FDFFFC;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Rubik', sans-serif;
+
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+}
+
+header {
+    .mNav {
+        position: sticky;
+        top: 100;
+        height: 100px;
+        z-index: 1;    
+        ul {
+            align-content: space-between; 
+            li {
+                text-transform: uppercase;
+                font-weight: 200;
+            }
+        }
+        .imgLogo {
+            padding-left: 50px;
+        }
+        #navbarNav {
+            justify-content: center;
+            ul {
+                li{
+                    padding: 30px;
+                }
+            }
+        }
+    }
+}
+
+@mixin margenes {
+    padding: $paddingContenido;
+    margin: $marginContenido;
+}
+
+.css-button-3d--yellow {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ffe566;
+    box-shadow: 0 5px #ffd819;
+  }
+  .css-button-3d--yellow:hover {
+    box-shadow: 0 3px #ffd819;
+    top: 1px;
+  }
+  .css-button-3d--yellow:active {
+    box-shadow: 0 0 #ffd819;
+    top: 5px;
+  }
+
+  .css-button-3d--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #343a40;
+    box-shadow: 0 5px #212529;
+  }
+  .css-button-3d--black:hover {
+    box-shadow: 0 3px #212529;
+    top: 1px;
+  }
+  .css-button-3d--black:active {
+    box-shadow: 0 0 #212529;
+    top: 5px;
+  }
+
+.contenedor__principal {
+    display: flex;
+    flex-direction: column;
+    .contenedor__producto {
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include margenes();
+        .contenedor__imagenProducto {
+            h1{
+                text-align: center;
+            }
+        }
+        .contenedor__descripcionProducto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            p:nth-child(1) {
+                font-style: italic;
+                font-weight: 500;
+            }
+            p:nth-child(2) {
+                text-align: justify;
+            }
+            p:nth-child(3) {
+                font-size: 0.85rem;
+            }
+        }
+    }
+    .contenedor__producto2 {
+        height: 120vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffd819;
+        padding: 0;
+        margin: 0;
+        @include margenes();
+        .contenedor__imagenProducto {
+            h1{
+                text-align: center;
+            }
+        }
+        .contenedor__descripcionProducto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            p:nth-child(1) {
+                font-style: italic;
+                font-weight: 500;
+            }
+            p:nth-child(2) {
+                text-align: justify;
+            }
+            p:nth-child(3) {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $textoBlanco;
+    background-color: #343a40;
+    height: 150px;
+    font-size: small;
+    gap: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+.contacto__informacion {
+    height: 50vh;
+    display: flex;
+    .imagenSoporte{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .informacionSoporte{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include margenes();
+        background-color: #fcf6bd;
+        margin: 0;
+    }
+}
+.contacto__formulario {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4) url(/images/teclado.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: 100vw;
+}
+
+form{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .form-control {
+        width: 500px;
+    }
+}

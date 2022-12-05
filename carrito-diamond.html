@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay.mistery-diamond</title>
+    <link rel="stylesheet" href="build/bootstrap.min.css">
+    <link rel="stylesheet" href="build/app.css">
+</head>
+<body>
+    <div class="contador bg-primary py-2 text-md-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-1">
+                <p class="fs-1" id="countdown">00:20:40</p>
+            </div>
+            <div class="col-md-1">
+                <img class="ps-4" src="build/img/svg-time.svg" alt="imagen countdown">
+            </div>
+            <div class="col-md-2">
+                <p class="fs-2">Tiempo para poder Finalzar tu compra</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-secondary py-5">
+        <div class="mt-5 py-5">
+            <img class="d-block mx-auto img-fluid mt-5" src="img/MISTERY-TICS.png" alt="imagen box">
+            <p class="text-white text-center fs-3">Diamond</p>
+            <h2 class="text-white text-center promo">¡PROMOCIÓN BLACK FRIDAY!</h2>
+        </div>
+
+        <div class="container mt-5 bg-white">
+        <div class="row align-items-center justify-content-center contenedor py-3">
+                <div class="col-md-2">
+                    <img class="producto d-block mx-auto" src="img/MISTERY-TICS.png" alt="imagen producto" width="95">
+                </div>
+                <div class="col-md-3 text-center text-md-start">
+                    <h3 class="m-0">Caja Diamond</h3>
+                    <p class="m-0 fs-1 fw-bold">$250 USD</p>
+                </div>
+            </div>
+
+            <form class="px-5 py-2 border-top">
+                <div class="mb-3">
+                    <label class="form-label fs-2 fw-bold">Datos personales</label><br>
+                    <label for="nombre" class="form-label">Tu Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre completo">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Tu Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Introduce tu email para recibir la compra">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Confirma tu Email</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce nuevamente tu email">
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fs-2 fw-bold">Dirección de envio</label><br>
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Introduce tu direccion">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Introduce tu ciudad">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Introduce tu estado">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="codigo" class="form-label">Código postal</label>
+                    <input type="text" class="form-control" id="codigo" placeholder="Introduce ntu codigo postal">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Télefono</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="Introduce tu teléfono">
+                      </div>
+                  </div>
+
+                  <div class="row justify-content-center align-items-center py-3">
+                    <div class="col-md-4 btn btn-outline-primary">
+                        <img src="build/img/credit-card.svg" alt="credit-card">
+                        <p>Tarjeta de Crédito</p>
+                    </div>
+
+                    <div class="col-md-4 btn btn-outline-secondary">
+                        <img src="build/img/credit-card.svg" alt="debit-card">
+                        <p>Tarjeta de Débito</p>
+                    </div>
+
+                    <div class="col-md-4 btn btn-outline-secondary oxxo">
+                        <img src="build/img/svg-oxxo.svg" alt="oxxo">
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-md-7">
+                        <div class="mb-3">
+                            <label for="tarjeta" class="form-label">Número de la Tarjeta</label>
+                            <input type="text" class="form-control" id="tarjeta" placeholder="Introduce solo números">
+                          </div>
+                          <div class="mb-3">
+                            <label for="titular" class="form-label">Nombre del Titular</label>
+                            <input type="text" class="form-control" id="titular" placeholder="Introduce el nombre impreso en la tarjeta">
+                          </div>
+                          <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="mes" class="form-label">Mes</label>
+                                    <input type="text" class="form-control" id="mes" placeholder="MM">
+                                  </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="año" class="form-label">Año</label>
+                                    <input type="text" class="form-control" id="año" placeholder="AA">
+                                  </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="build/img/tarjeta-credito.png" alt="imagen tarjeta">
+                    </div>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary fs-4">Comprar Ahora</button>
+              </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
